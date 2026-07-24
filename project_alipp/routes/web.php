@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\PageController;
 /** 
 Route::get('/', function () {
     return view('welcome');
@@ -31,10 +32,10 @@ Route::put('siswa/{id}', function ($id) {
 });
 Route::delete('siswa/{id}', function ($id) {
     return "DELETE siswa dengan id: $id";
-}); */
+}); 
 
 
-Route::get('/', function () { 
+ Route::get('/', function () { 
 echo " Hi! Selamat Datang di Website Laravel"; 
 });
 Route::get('/about', function () { 
@@ -43,5 +44,15 @@ echo " NIM : 2041720205 <br> Nama : Allif Pangestu Aji <br> Kelas : 2RPB";
 Route::get('/artikel/{id}', function ($id) { 
 echo " “Ini adalah halaman 
 Artikel dengan ID: $id"; 
-}); 
+}); */
+
+route::get('/', [PageController::class, 'index']);
+route::get('/about', [PageController::class, 'about']);
+route::get('/artikel/{id}', [PageController::class, 'artikel']);
+/**Route::get('/hello', function () { 
+ 
+return view('blog.hello', ['name' => 'Andi']); 
+ 
+}); */
+Route::get('/hello', [WelcomeController::class, 'hello']); 
 ?>
