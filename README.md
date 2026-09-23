@@ -1,22 +1,29 @@
 # Project Alipp
 
-Project pengembangan website menggunakan Laravel.
+Project pembelajaran pengembangan website menggunakan framework Laravel.
+
+## Deskripsi
+
+Project ini dibuat untuk mempelajari dasar-dasar pengembangan aplikasi web
+menggunakan Laravel, termasuk routing, controller, dan Blade template.
 
 ## Teknologi
+
 - PHP
 - Laravel
-- MySQL
 - HTML
-- CSS
-- JavaScript
-
-## Tujuan
-Project ini dibuat sebagai bagian dari proses pembelajaran
-pengembangan aplikasi web dan penerapan framework Laravel.
+- Blade Template
+- Git & GitHub
 
 ## Fitur
-- Struktur aplikasi Laravel
-- Pengelolaan database
-- Tampilan web
-- Routing
-- Template Blade
+
+- Routing menggunakan Laravel
+- Controller
+- Blade template
+- Halaman informasi
+- Halaman artikel dengan parameter ID
+
+## Tujuan
+
+Project ini dibuat sebagai bagian dari proses pembelajaran
+pengembangan aplikasi web menggunakan framework Laravel.
